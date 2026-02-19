@@ -9,120 +9,150 @@
 </head>
 
 <body>
-    <header>
-        <h1>Jessica Carrilho - Desenvolvedora de Software</h1>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="titulo">
+            Jessica Carrilho - Desenvolvedora de Software
+        </h1>
     </header>
-    <main>
-        <div><a href="#sobre">Sobre mim</a></div>
-        <div><a href="#projetos">Projetos</a></div>
-        <div><a href="#contato">Contato</a></div>
-           </main>
 
-    <section>
-        <h2>Sobre mim</h2>
-        <img src="FotoJessicaCarrilho.jpg" alt="Foto de Jessica Carrilho" title="Imagem de perfil de Jessica">
+    <!-- MENU -->
+    <nav class="menu">
 
-        <article>
-            <p>Meu nome é Jessica Carrilho e sou uma Desenvolvedora de Software apaixonada por criar soluções
-                inovadoras. Estou me especializando em Front-End e Back-End. Sou dedicada a aprender constantemente e a
-                me manter atualizada com
-                as últimas tendências tecnológicas.Além disso, sou uma pessoa comunicativa e colaborativa, sempre buscando trabalhar em equipe para alcançar
-                os melhores resultados, e estou animada para compartilhar meus projetos e experiências!</p> <br>
-        </article>
+        <a href="#sobre" class="menu-link">Sobre</a>
+        <a href="#habilidades" class="menu-link">Habilidades</a>
+        <a href="#projetos" class="menu-link">Projetos</a>
+        <a href="#contato" class="menu-link">Contato</a>
 
+    </nav>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="secao">
+
+        <h2 class="subtitulo">Sobre Mim</h2>
+
+        <img src="FotoJessicaCarrilho.jpg" alt="Foto de Jessica Carrilho" title="imagem de Jessica Carrilho"
+            class="foto">
+
+        <p>
+            Meu nome é Jessica Carrilho e sou Desenvolvedora de Software
+            apaixonada por tecnologia. Busco me especializar em Front-End
+            e Back-End e sou dedicada a aprender constantemente e a
+            me manter atualizada com as últimas tendências tecnológicas.
+            Além disso, sou uma pessoa comunicativa e colaborativa, sempre
+            buscando trabalhar em equipe para alcançar os melhores resultados,
+            e estou animada para compartilhar meus projetos e experiências!
+        </p>
 
     </section>
-    <section>
-        <aside>
-            <h2>Habilidades</h2>
-            
-            <main>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-            </main>
-        </aside>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="secao">
+
+        <h2 class="subtitulo">Habilidades</h2>
+
+        <div class="skills">
+
+            <span class="habilidade">HTML</span>
+            <span class="habilidade">CSS</span>
+            <span class="habilidade">JavaScript</span>
+            <span class="habilidade">Git</span>
+
+        </div>
 
         <table>
 
-        <thead>
+            <thead>
                 <tr>
-                    <th>Habilidades e tecnologias</th>
-                  
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
                     <td>HTML</td>
                     <td>Intermediário</td>
-                    <td>Domínio da estruturação de páginas web, incluindo semântica e acessibilidade.</td>
+                    <td>Estruturação semântica</td>
                 </tr>
+
                 <tr>
                     <td>CSS</td>
                     <td>Intermediário</td>
-                    <td>Habilidade em estilização de páginas, criação de layouts responsivos e animações. Experiência em
-                        Flexbox, Grid e animações CSS.</td>
+                    <td>Layouts responsivos</td>
                 </tr>
+
                 <tr>
                     <td>JavaScript</td>
                     <td>Básico</td>
-                    <td>Desenvolvimento de scripts do lado do cliente para interatividade.</td>
+                    <td>Interatividade</td>
                 </tr>
             </tbody>
+
         </table>
+
     </section>
 
-    <section>
-        <h2>Projetos</h2>
-        <article>
-            <h3>Site de Portifólio</h3>
-            <p>Este é o primeiro projeto desenvolvido para mostrar meus projetos e habilidades. O site é responsivo e
-                utiliza HTML, CSS e JavaScript para criar uma experiência interativa.</p>
-                <p> <a href="https://jessicav-coder.github.io/portifolio/" target="_blank">Acesse meu portifólio no GitHub</a>
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao">
+
+        <h2 class="subtitulo">Projetos</h2>
+
+        <div class="projetos-container">
+
+            <article class="card">
+
+                <h3>Portfólio Pessoal</h3>
+
+                <p>
+                    Este é o meu primeiro site desenvolvido para apresentar
+                    minhas habilidades e meus futuros projetos.
+                </p>
+
+                <a href="https://jessicav-coder.github.io/portifoliojessica/" target="_blank" class="botao">
+                    Meu portifólio no GitHub
+                </a>
+
+            </article>
+
+        </div>
+
     </section>
 
+    <!-- CONTATO -->
+    <section id="contato" class="secao contato">
 
-    <section>
-        <h2>Contatos</h2>
-        <p>Tem algum projeto em mente? Entre em contato comigo!</p>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+        <h2 class="subtitulo">Contato</h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+        <form id="formulario">
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required><br><br>
+            <input type="text" id="nome" placeholder="Nome" required>
 
-            <label for="mensagem">Mensagem:</label><br><br>
-            <select name="mensagem" id="mensagem">
-                <option value="assunto">Assunto</option>
-                <option value="projeto">Projetos</option>
-                <option value="duvida">Dúvidas</option>
-                <option value="parceria">Parcerias</option>
-            </select><br>
+            <input type="email" id="email" placeholder="Email" required>
 
+            <textarea id="mensagem" placeholder="Mensagem" required>
+        </textarea>
 
-            <textarea id="mensagem" name="mensagem" rows="4" cols="30" required></textarea><br>
+            <button type="submit" class="botao">
+                Enviar
+            </button>
 
-            <input type="checkbox" name="inscricao" id="inscricao">
-            <label for="inscricao">Deseja receber minha newsletter? Fique por dentro das novidades!</label><br><br>
-
-
-            <input type="submit" value="Enviar"><br><br>
         </form>
 
-        <address>
-            Email: <a href="mailto:jessicavasconceloscarrilho@gmail.com">jessicavasconceloscarrilho@gmail.com</a> <br>
-            Telefone: <a href="tel:+55(47)988535591">(47) 98853-5591</a> <br>
-        </address>
-
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Jessica Carrilho. Todos os direitos reservados.</p>
+
+        <p>
+            © 2026 Jessica Carrilho - Todos os direitos reservados
+        </p>
+
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
